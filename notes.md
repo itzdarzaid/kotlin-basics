@@ -4,7 +4,7 @@ These are my personal notes while learning Kotlin.
 
 ---
 
-# 📅 Day 1 – Introduction to Kotlin
+#  Day 1 – Introduction to Kotlin
 
 ## 🔹 What is Kotlin?
 
