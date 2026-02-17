@@ -3,8 +3,9 @@
 These are my personal notes while learning Kotlin.
 
 ---
+# ✅ Day 1
 
-#  Day 1 – Introduction to Kotlin
+# Introduction to Kotlin
 
 ## 🔹 What is Kotlin?
 
@@ -102,4 +103,121 @@ Output:
 
 ---
 
-# ✅ Day 1 Completed
+# 📅 Day 2 – Kotlin Variables
+
+## 🔹 What is a Variable?
+
+A variable is a container that stores a value.
+
+Example:
+
+```kotlin
+val name = "Dar Zaid"
+```
+
+Here:
+- `val` → keyword
+- `name` → variable name
+- `"Dar Zaid"` → stored value
+
+---
+
+## 🔹 val vs var
+
+### ✅ val (Read-only)
+- Value cannot change after assignment.
+- Preferred by default.
+
+Example:
+
+```kotlin
+val age = 22
+// age = 23 ❌ Not allowed
+```
+
+---
+
+### ✅ var (Mutable)
+- Value can change later.
+
+Example:
+
+```kotlin
+var age = 22
+age = 23  // ✔ Allowed
+```
+
+---
+
+## 🔹 Type Inference
+
+Kotlin automatically detects type.
+
+Example:
+
+```kotlin
+val number = 10   // Int
+val price = 9.99  // Double
+val name = "Zaid" // String
+```
+
+Explicit type (optional):
+
+```kotlin
+val number: Int = 10
+```
+
+---
+
+## 🔹 Basic Data Types Used
+
+- Int → Whole numbers
+- Double → Decimal numbers
+- String → Text
+- Char → Single character
+- Boolean → true / false
+
+---
+
+## 🔹 String Templates
+
+Insert variables inside strings using `$`.
+
+Example:
+
+```kotlin
+val name = "Zaid"
+println("Hello $name")
+```
+
+Output:
+Hello Zaid
+
+For expressions:
+
+```kotlin
+println("Next year age: ${age + 1}")
+```
+
+---
+
+## 🔹 Variable Naming Rules
+
+- Cannot start with number
+- No spaces
+- Use camelCase
+- Meaningful names preferred
+
+Good examples:
+- userName
+- totalMarks
+- isLoggedIn
+
+---
+
+## 🔹 What I Learned
+
+- Use `val` whenever possible.
+- Use `var` only when needed.
+- Kotlin automatically detects type.
+- `$variable` inserts value inside string.
