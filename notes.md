@@ -221,3 +221,113 @@ Good examples:
 - Use `var` only when needed.
 - Kotlin automatically detects type.
 - `$variable` inserts value inside string.
+
+---
+
+# 📅 Day 3 – Functions & Return Values
+
+## 🔹 What is a Function?
+
+A function is a block of code that performs a specific task.
+
+It helps:
+- Avoid repeating code
+- Organize logic
+- Make programs cleaner
+
+---
+
+## 🔹 Basic Function Syntax
+
+```kotlin
+fun greet() {
+    println("Hello!")
+}
+```
+
+Here:
+- `fun` → keyword to define function
+- `greet` → function name
+- `()` → parameters
+- `{}` → function body
+
+---
+
+## 🔹 Calling a Function
+
+To use a function, call it by its name.
+
+```kotlin
+fun main() {
+    greet()
+}
+```
+
+---
+
+## 🔹 Function with Parameters
+
+Functions can take input values.
+
+```kotlin
+fun greet(name: String) {
+    println("Hello $name")
+}
+```
+
+Calling it:
+
+```kotlin
+greet("Zaid")
+```
+
+---
+
+## 🔹 Return Values
+
+Some functions return a value using `return`.
+
+Example:
+
+```kotlin
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+```
+
+Here:
+- `: Int` → return type
+- `return` → sends value back
+
+Using it:
+
+```kotlin
+fun main() {
+    val result = add(5, 3)
+    println(result)
+}
+```
+
+Output:
+8
+
+---
+
+## 🔹 Single Expression Function
+
+Short form:
+
+```kotlin
+fun add(a: Int, b: Int): Int = a + b
+```
+
+Cleaner and shorter.
+
+---
+
+## 🔹 What I Learned
+
+- Functions organize code.
+- Parameters allow input.
+- `return` sends value back.
+- Return type must match value.
