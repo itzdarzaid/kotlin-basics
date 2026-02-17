@@ -331,3 +331,87 @@ Cleaner and shorter.
 - Parameters allow input.
 - `return` sends value back.
 - Return type must match value.
+
+  ---
+
+## 🔹 Functions – Complete Understanding
+
+### What is a Function?
+A reusable block of code that performs a task.
+
+---
+
+### Function Without Return
+
+```kotlin
+fun greet() {
+    println("Hello")
+}
+```
+
+Returns nothing (Unit).
+
+---
+
+### Function With Return Value
+
+```kotlin
+fun greet(): String {
+    return "Hello"
+}
+```
+
+If return type is written, `return` is required.
+
+---
+
+### Parameters
+
+```kotlin
+fun greet(name: String): String {
+    return "Hello $name"
+}
+```
+
+Parameter = variable in definition  
+Argument = actual value when calling
+
+---
+
+### Multiple Parameters
+
+```kotlin
+fun greet(name: String, age: Int): String
+```
+
+Order matters unless named arguments are used.
+
+---
+
+### Named Arguments
+
+```kotlin
+greet(age = 21, name = "Ali")
+```
+
+Makes code clearer.
+
+---
+
+### Default Arguments
+
+```kotlin
+fun greet(name: String = "Rover", age: Int): String
+```
+
+If name not provided → Rover is used.
+
+---
+
+## Summary
+
+- Functions organize logic.
+- Return type requires `return`.
+- Parameters receive input.
+- Named arguments improve readability.
+- Default arguments provide backup values.
